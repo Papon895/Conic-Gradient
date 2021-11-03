@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: lightgrey;
+}
+.one {
+  width: 200px;
+  height: 200px;
+  background: repeating-conic-gradient( /*red 0deg 90deg, white 90deg 180deg, red 180deg 270deg, white 270deg 360deg*/ green 30deg, red 40deg 60deg);
+  background-sie: 20px 20px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.one:hover {
+  transform: rotate(360deg);
+}
